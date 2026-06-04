@@ -1,1 +1,216 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colores personalizados */
+@layer base {
+  :root {
+    --color-cream-50: #fffdf9;
+    --color-cream-100: #fff8f0;
+    --color-cream-200: #fff0de;
+    --color-cream-300: #ffe4c7;
+    --color-cream-400: #ffd4a8;
+
+    --color-beige-50: #faf6f1;
+    --color-beige-100: #f5ede3;
+    --color-beige-200: #e8d9c8;
+    --color-beige-300: #d4c0a5;
+    --color-beige-400: #bfa482;
+    --color-beige-500: #8b6f5e;
+
+    --color-peach-100: #fff0e8;
+    --color-peach-200: #ffdcc8;
+    --color-peach-300: #f5c5a3;
+    --color-peach-400: #e8a87c;
+    --color-peach-500: #d4895a;
+
+    --color-sage-50: #f4f8f6;
+    --color-sage-100: #e0ede8;
+    --color-sage-200: #c0dbcf;
+    --color-sage-300: #a8c8d8;
+    --color-sage-400: #7baab5;
+    --color-sage-500: #5e8e9a;
+
+    --color-warm-800: #3d3029;
+    --color-warm-700: #5c4a3e;
+    --color-warm-600: #6b5848;
+    --color-warm-500: #8b7560;
+    --color-warm-400: #a89580;
+  }
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #fff8f0;
+    font-family: "Inter", system-ui, sans-serif;
+    color: #3d3029;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: #f5c5a3;
+    color: #3d3029;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fff8f0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d4c0a5;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bfa482;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .float-anim {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .pulse-soft {
+    animation: pulse-soft 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes loaderFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scrollDown {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+
+  /* Clases de animación separadas - sin mezclar shorthand con propiedades específicas */
+  .animate-loader-fade {
+    animation-name: loaderFadeUp;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-fill-mode: forwards;
+  }
+
+  .animate-loader-fade-delayed {
+    animation-name: loaderFadeUp;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+
+  .animate-scroll-down {
+    animation-name: scrollDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  /* Clases para animaciones del hero */
+  .animate-hero-subtitle {
+    animation-name: loaderFadeUp;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+  }
+
+  .animate-hero-title {
+    animation-name: loaderFadeUp;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-fill-mode: both;
+    animation-delay: 0.4s;
+  }
+
+  .animate-hero-description {
+    animation-name: loaderFadeUp;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-fill-mode: both;
+    animation-delay: 0.7s;
+  }
+
+  .animate-hero-buttons {
+    animation-name: loaderFadeUp;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-fill-mode: both;
+    animation-delay: 1s;
+  }
+
+  .animate-hero-scroll {
+    animation-name: loaderFadeUp;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-fill-mode: both;
+    animation-delay: 1.4s;
+  }
+}
