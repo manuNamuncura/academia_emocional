@@ -37,7 +37,7 @@ function App() {
   }
 
   return (
-    <div className="bg-cream-100 font-sans text-warm-800 antialiased min-h-screen">
+    <div className="bg-cream-100 font-sans text-warm-800 antialiased min-h-screen w-full overflow-x-hidden">
       <ScrollProgress />
       <Header />
       <main>

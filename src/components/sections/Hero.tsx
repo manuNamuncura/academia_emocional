@@ -45,14 +45,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-0 translate-y-[30px] animate-hero-scroll">
-        <span className="font-sans text-[0.65rem] tracking-[0.25em] uppercase text-cream-100/50">Scroll</span>
-        <div className="scroll-line w-px h-12 relative overflow-hidden bg-cream-100/15">
-          <div className="absolute top-[-100%] left-0 w-full h-full bg-gradient-to-b from-transparent via-peach-300 to-transparent animate-scroll-down" />
-        </div>
-      </div>
     </section>
   );
 };
