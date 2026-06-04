@@ -78,28 +78,6 @@ const Contact = () => {
               />
             </a>
 
-            {/* Email */}
-            <a
-              href={contactInfo.facebookUrl}
-              className="flex items-center gap-4 sm:gap-5 p-4 sm:p-5 bg-cream-50 hover:bg-cream-100 rounded-2xl transition-all duration-300 group w-full"
-            >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-peach-100 flex items-center justify-center flex-shrink-0 group-hover:bg-peach-200 transition-colors">
-                <Icon name="facebook" className="w-6 h-6 sm:w-7 sm:h-7 text-peach-400" />
-              </div>
-              <div className="flex-1">
-                <p className="font-semibold text-warm-800 text-base sm:text-lg">
-                  Facebook
-                </p>
-                <p className="text-warm-500 text-xs sm:text-sm break-all">
-                  {contactInfo.Facebook}
-                </p>
-              </div>
-              <Icon
-                name="external-link"
-                className="w-4 h-4 text-warm-400 flex-shrink-0"
-              />
-            </a>
-
             {/* Instagram */}
             <a
               href={contactInfo.instagramUrl}

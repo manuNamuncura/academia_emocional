@@ -84,13 +84,6 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-warm-400 text-sm">
                 <Icon
-                  name="facebook"
-                  className="w-4 h-4 text-peach-300 flex-shrink-0"
-                />
-                {contactInfo.Facebook}
-              </li>
-              <li className="flex items-center gap-2 text-warm-400 text-sm">
-                <Icon
                   name="instagram"
                   className="w-4 h-4 text-sage-300 flex-shrink-0"
                 />
