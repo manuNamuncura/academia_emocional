@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Icon from "../ui/Icon";
 import { benefits } from "../../types/content";
+import benefitsImage from "../../assets/image-2.webp"
 
 const Benefits = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -63,7 +64,7 @@ const Benefits = () => {
             <div className="relative">
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-peach-100 rounded-3xl"></div>
               <img
-                src="https://picsum.photos/seed/wellness-benefits-growth/600/700.jpg"
+                src={benefitsImage}
                 alt="Beneficios de formarte con nosotros"
                 className="relative rounded-3xl w-full h-[550px] object-cover shadow-lg"
               />

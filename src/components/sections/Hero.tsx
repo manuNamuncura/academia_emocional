@@ -1,3 +1,5 @@
+import heroImagen from "../../assets/image-1edit.png"
+
 const Hero = () => {
 
   return (
@@ -5,7 +7,7 @@ const Hero = () => {
       {/* Imagen de fondo */}
       <div className="absolute inset-0">
         <img
-          src="https://picsum.photos/seed/emotional-serenity-calm-light/1920/1200.jpg"
+          src={heroImagen}
           alt="Bienestar emocional"
           className="w-full h-full object-cover opacity-70"
         />

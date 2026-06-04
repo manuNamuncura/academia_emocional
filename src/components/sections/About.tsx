@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Icon from "../ui/Icon";
+import aboutImage from "../../assets/miriam-edit.png"
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -75,7 +76,7 @@ const About = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full bg-sage-100 rounded-3xl"></div>
               <img
-                src="https://picsum.photos/seed/miriam-portrait-professional/600/700.jpg"
+                src={aboutImage}
                 alt="Miriam Sandoval"
                 className="relative rounded-3xl w-full h-[500px] lg:h-[600px] object-cover shadow-lg"
               />
