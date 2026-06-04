@@ -27,6 +27,7 @@ import {
   CheckCircle,
   Users,
   TrendingUp,
+  BookUser,
   type LucideIcon,
 } from "lucide-react";
 
@@ -52,13 +53,14 @@ const iconMap: Record<string, LucideIcon> = {
   sparkles: Sparkles,
   menu: Menu,
   x: X,
-  mail: Mail,
+  facebook: BookUser,
   instagram: LifeBuoy,
   "external-link": ExternalLink,
   "arrow-right": ArrowRight,
   "check-circle": CheckCircle,
   'users': Users, 
   'trending-up': TrendingUp,
+  mail: Mail,
 };
 
 interface IconProps {

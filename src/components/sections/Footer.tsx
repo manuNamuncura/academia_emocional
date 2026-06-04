@@ -87,7 +87,7 @@ const Footer = () => {
                   name="mail"
                   className="w-4 h-4 text-peach-300 flex-shrink-0"
                 />
-                {contactInfo.email}
+                {contactInfo.Facebook}
               </li>
               <li className="flex items-center gap-2 text-warm-400 text-sm">
                 <Icon

@@ -200,7 +200,8 @@ export const testimonials: Testimonial[] = [
 
 export const contactInfo = {
   whatsapp: "5492975415642",
-  email: "info@academiaemocional.com",
-  instagram: "@academiaemocional",
-  instagramUrl: "https://instagram.com/academiaemocional",
+  Facebook: "Miriam Sandoval",
+  facebookUrl: "https://www.facebook.com/share/18aKEiHNHj/",
+  instagram: "@27993562m",
+  instagramUrl: "https://www.instagram.com/27993562m?igsh=MWFsc2VzbXo1d2JwMw==",
 };
