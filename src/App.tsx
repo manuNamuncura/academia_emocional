@@ -11,6 +11,7 @@ import Testimonials from "./components/sections/Testimonials";
 import Cta from "./components/sections/Cta";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import AdvertisingSimple from "./components/sections/AdvertisingSimple";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -43,6 +44,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <AdvertisingSimple />
         <Courses />
         <Certifications />
         <Benefits />
