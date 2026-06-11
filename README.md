@@ -18,43 +18,6 @@ Sitio Web ofical de la **Academia de Consultoría Emocional** de Miriam Sandoval
 - **Iconos**: [Lucide React](https://lucide.dev/)
 - **Fuentes**: Google Fonts (Playfair Display + Inter)
 
-## 📦 Estructura del Proyecto
-
-academia-consultoria/
-├── src/
-│ ├── assets/
-│ │ ├── image-1edit.png
-│ │ └── image-2.webp
-| | └── miriam-edit.png
-│ └── globals.css # Estilos globales + Tailwind
-├── components/
-│ ├── layout/
-│ │ ├── Header.tsx # Barra de navegación
-│ │ ├── ScrollProgress.tsx
-│ ├── sections/
-│ │ ├── Hero.tsx # Sección principal
-│ │ ├── About.tsx # Sobre Miriam
-│ │ ├── Courses.tsx # Cursos disponibles
-│ │ ├── Certifications.tsx # Certificaciones
-│ │ ├── Benefits.tsx # Beneficios
-│ │ ├── Testimonials.tsx # Testimonios
-│ │ ├── Cta.tsx # Llamada a la acción
-│ │ └── Contact.tsx # Formulario de contacto
-│ │ └── Footer.tsx 
-│ └── ui/
-│ └── Loader.tsx # Botón flotante de WhatsApp
-├── hooks/
-│ └── useScrollAnimation.ts # Animaciones al scroll
-│ └── useScrollProgress.ts
-│ └── useScrollParallax.ts # Animaciones al scroll
-├── types/
-│ └── index.ts # Tipos TypeScript
-| └── content.ts 
-├── public/ # Archivos estáticos
-├── .env.local # Variables de entorno
-├── tailwind.config.ts # Configuración de Tailwind
-└── package.json # Dependencias
-
 ## 🛠️ Instalación y Uso
 
 ### Requisitos previos
