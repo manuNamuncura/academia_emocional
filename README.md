@@ -1,73 +1,96 @@
-# React + TypeScript + Vite
+# Academia de Consultorioa Emocional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio Web ofical de la **Academia de Consultoría Emocional** de Miriam Sandoval. Una plataforma moderna, responsiva y optimizada para ofrecer formación en bienestar emocional, acompañamiento terapéutico y desarrollo personal.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Diseño moderno y elegante** - Interfaz cálida y profesional.
+- **Completamente responsivo** - Experiencia óptima en todos los dispositivos.
+- **Alto rendimiento** - Construido con React Vite y optimizada para SEO.
+- **Accesibiilidad** - Estándares WCAG para una experiencia inclusiva.
+- **SEO optimizado** - Meta tags, estructura semántica y rendimiento.
 
-## React Compiler
+## 🚀 Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React 19](https://es.react.dev/) con App Router
+- **Lenguaje**: [TypeScript](https://www.typescriptlang.org/)
+- **Estilos**: [Tailwind CSS 3](https://tailwindcss.com/)
+- **Iconos**: [Lucide React](https://lucide.dev/)
+- **Fuentes**: Google Fonts (Playfair Display + Inter)
 
-## Expanding the ESLint configuration
+## 📦 Estructura del Proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+academia-consultoria/
+├── src/
+│ ├── assets/
+│ │ ├── image-1edit.png
+│ │ └── image-2.webp
+| | └── miriam-edit.png
+│ └── globals.css # Estilos globales + Tailwind
+├── components/
+│ ├── layout/
+│ │ ├── Header.tsx # Barra de navegación
+│ │ ├── ScrollProgress.tsx
+│ ├── sections/
+│ │ ├── Hero.tsx # Sección principal
+│ │ ├── About.tsx # Sobre Miriam
+│ │ ├── Courses.tsx # Cursos disponibles
+│ │ ├── Certifications.tsx # Certificaciones
+│ │ ├── Benefits.tsx # Beneficios
+│ │ ├── Testimonials.tsx # Testimonios
+│ │ ├── Cta.tsx # Llamada a la acción
+│ │ └── Contact.tsx # Formulario de contacto
+│ │ └── Footer.tsx 
+│ └── ui/
+│ └── Loader.tsx # Botón flotante de WhatsApp
+├── hooks/
+│ └── useScrollAnimation.ts # Animaciones al scroll
+│ └── useScrollProgress.ts
+│ └── useScrollParallax.ts # Animaciones al scroll
+├── types/
+│ └── index.ts # Tipos TypeScript
+| └── content.ts 
+├── public/ # Archivos estáticos
+├── .env.local # Variables de entorno
+├── tailwind.config.ts # Configuración de Tailwind
+└── package.json # Dependencias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Instalación y Uso
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Requisitos previos
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js 18.x o superior
+- npm o yarn
+
+### Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/academia-consultoria.git
+
+# Entrar al directorio
+cd academia-consultoria
+
+# Instalar dependencias
+npm install
+
+# Configurar variables de entorno
+cp .env.example .env.local
+# Editar .env.local con tus credenciales (si aplica)
+
+# Iniciar servidor de desarrollo
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 📄 Licencia
+MIT © [Miriam Sandoval - Academia de Consultoría Emocional]
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 👩‍💻 Autor
+Miriam Sandoval - Academia de Consultoría Emocional
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- ✉️ info@academiaemocional.com
+- 📷 @academiaemocional
+
+# 🌟 Créditos
+Diseñado con ♥ para el bienestar emocional y el desarrollo personal.
+
