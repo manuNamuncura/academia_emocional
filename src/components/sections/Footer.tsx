@@ -39,11 +39,11 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-            <p className="text-warm-400 text-sm leading-relaxed mb-5">
+            <p className="text-warm-300 text-sm leading-relaxed mb-5">
               Acompañamiento, formación y desarrollo personal para el bienestar
               integral.
             </p>
-            <p className="text-warm-500 text-sm">Miriam Sandoval</p>
+            <p className="text-warm-300 text-sm">Miriam Sandoval</p>
           </div>
 
           {/* Navegación */}
@@ -57,7 +57,7 @@ const Footer = () => {
                   <a
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className="text-warm-400 hover:text-peach-300 transition-colors text-sm"
+                    className="text-warm-300 hover:text-peach-300 transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -72,7 +72,7 @@ const Footer = () => {
               Contacto
             </h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-warm-400 text-sm">
+              <li className="flex items-center gap-2 text-warm-300 text-sm">
                 <svg
                   className="w-4 h-4 text-green-400 flex-shrink-0"
                   fill="currentColor"
@@ -82,7 +82,7 @@ const Footer = () => {
                 </svg>
                 +54 9 2975 415642
               </li>
-              <li className="flex items-center gap-2 text-warm-400 text-sm">
+              <li className="flex items-center gap-2 text-warm-300 text-sm">
                 <Icon
                   name="instagram"
                   className="w-4 h-4 text-sage-300 flex-shrink-0"
@@ -94,11 +94,11 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-warm-700 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-warm-500 text-sm">
+          <p className="text-warm-300 text-sm">
             © 2026 Academia de Consultoría Emocional. Todos los derechos
             reservados.
           </p>
-          <p className="text-warm-600 text-xs">
+          <p className="text-warm-400 text-xs">
             Diseñado con <span className="text-peach-300">♥</span> para tu
             bienestar
           </p>
