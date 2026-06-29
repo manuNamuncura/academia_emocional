@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Icon from "../ui/Icon";
+import { contactInfo } from "../../types/content";
 
 const Cta = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -59,7 +60,7 @@ const Cta = () => {
             Solicitar Información
           </a>
           <a
-            href="https://wa.me/5491111111111?message=Hola%20Miriam%2C%20me%20gustaría%20solicitar%20información%20sobre%20los%20cursos"
+            href={`https://wa.me/${contactInfo.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-warm-800 text-warm-800 hover:bg-warm-800 hover:text-white font-semibold px-10 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2"

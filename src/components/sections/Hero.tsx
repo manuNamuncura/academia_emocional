@@ -1,4 +1,5 @@
 import heroImagen from "../../assets/image-1edit.png"
+import { contactInfo } from "../../types/content";
 
 const Hero = () => {
 
@@ -34,7 +35,7 @@ const Hero = () => {
               Ver Cursos
             </a>
             <a 
-              href="https://wa.me/5491111111111" 
+              href={`https://wa.me/${contactInfo.whatsapp}`}
               target="_blank" 
               rel="noopener noreferrer" 
               className="border-2 border-white/40 text-white hover:bg-white hover:text-warm-800 font-semibold px-8 py-4 rounded-full transition-all duration-300 text-center flex items-center justify-center gap-2 backdrop-blur-sm"
