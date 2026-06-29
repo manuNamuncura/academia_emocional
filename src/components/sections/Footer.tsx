@@ -98,7 +98,7 @@ const Footer = () => {
             © 2026 Academia de Consultoría Emocional. Todos los derechos
             reservados.
           </p>
-          <p className="text-warm-400 text-xs">
+          <p className="text-warm-300 text-xs">
             Diseñado con <span className="text-peach-300">♥</span> para tu
             bienestar
           </p>
