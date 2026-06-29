@@ -1,4 +1,4 @@
-import heroImagen from "../../assets/image-1edit.webp"
+import heroImagen from "../../assets/image-1.webp"
 import { contactInfo } from "../../types/content";
 
 const Hero = () => {
