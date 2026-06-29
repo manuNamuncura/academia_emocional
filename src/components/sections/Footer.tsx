@@ -48,9 +48,9 @@ const Footer = () => {
 
           {/* Navegación */}
           <div>
-            <h4 className="font-serif text-white font-semibold mb-5">
+            <h3 className="font-serif text-white font-semibold mb-5">
               Navegación
-            </h4>
+            </h3>
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.name}>
