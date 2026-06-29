@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Icon from "../ui/Icon";
-import aboutImage from "../../assets/miriam-edit.png"
+import aboutImage from "../../assets/miriam-edit.webp"
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
