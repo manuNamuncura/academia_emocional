@@ -68,9 +68,9 @@ const Footer = () => {
 
           {/* Contacto */}
           <div>
-            <h4 className="font-serif text-white font-semibold mb-5">
+            <h3 className="font-serif text-white font-semibold mb-5">
               Contacto
-            </h4>
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-warm-300 text-sm">
                 <svg
