@@ -46,8 +46,8 @@ export default {
         },
       },
       fontFamily: {
-        serif: ["Playfair Display", "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
       },
       borderRadius: {
         "2xl": "1rem",

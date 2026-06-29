@@ -36,8 +36,24 @@
     --color-warm-600: #6b5848;
     --color-warm-500: #8b7560;
     --color-warm-400: #a89580;
-    --color-warn-300: #D4C4B3;
+    --color-warn-300: #d4c4b3;
   }
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-v20-latin-regular.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/playfair-display-v40-latin-regular.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @layer base {
